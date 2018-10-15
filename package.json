@@ -1,0 +1,35 @@
+{
+  "name": "mongoose-findorerror",
+  "version": "1.0.0",
+  "description": "Simple Mongoose plugin for rejecting findOne and findById promises which resolve null.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa403210842/mongoose-find-or-error.git"
+  },
+  "keywords": [
+    "mongoose",
+    "plugin",
+    "findOne",
+    "findOneOrError",
+    "findById",
+    "findByIdOrError"
+  ],
+  "author": "FishChen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aa403210842/mongoose-find-or-error/issues"
+  },
+  "homepage": "https://github.com/aa403210842/mongoose-find-or-error#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.3"
+  }
+}

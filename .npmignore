@@ -1,0 +1,12 @@
+.git
+.idea
+.eslintrc
+.travis.yml
+
+.arcconfig
+ICamdoraModel.mdj
+node_modules/
+
+test/
+package-lock.json
+yarn.lock
