@@ -87,7 +87,7 @@ const Example = require('./example');
      console.log(err);
    });
   // 2. Promise
-  // or set option emptyError
+  // or set option emptyError
   Example.findOne({ 
     name: 'plugin example' 
   }, null, {
@@ -142,8 +142,8 @@ schema.plugin(findOrErrorPlugin, {
     findByIdFname: 'findByIdOrError' // custom function name or set `false` disable it
   },
   query: { //  set `false` disable query helpers
-    queryFname: 'throwEmpty', // .throwEmpty(true) or .throwEmpty(404)
-    queryOption: 'emptyError' // { emptyError: true } or  { emptyError: 404 }
+    queryFname: 'throwEmpty', // use .throwEmpty(true) or .throwEmpty(404)
+    queryOption: 'emptyError' // use { emptyError: true } or  { emptyError: 404 }
   },
   sendEmptyError: sendEmptyError // must reutrn an instanceof Error
 });
@@ -154,7 +154,7 @@ Error With `code`
 // .throwEmpty(code)
 Example.findOne({ name: 'plugin example' })
    .select({name: 1})
-   .throwEmpty(404) // <- add this line before .then() or .exec()
+   .throwEmpty(404) // set code to error.code
    .limit(10)
    .then(doc => {
      console.log('Only executed when document is found');
