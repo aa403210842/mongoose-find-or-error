@@ -1,5 +1,5 @@
 {
-  "name": "mongoose-findorerror",
+  "name": "mongoose-findone-or-error",
   "version": "1.0.0",
   "description": "Simple Mongoose plugin for rejecting findOne and findById promises which resolve null.",
   "main": "index.js",
@@ -12,6 +12,7 @@
   },
   "keywords": [
     "mongoose",
+    "error",
     "plugin",
     "findOne",
     "findOneOrError",

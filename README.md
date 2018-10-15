@@ -1,4 +1,4 @@
-# mongoose-findorerror
+# mongoose-findone-or-error
 
 Simple Mongoose plugin for rejecting findOne and findById promises which resolve null.
 
@@ -9,14 +9,14 @@ Hook the plugin to a schema:
 ```javascript
 // global level
 const mongoose = require('mongoose');
-const findOrErrorPlugin = require('mongoose-findorerror');
+const findOrErrorPlugin = require('mongoose-findone-or-error');
 mongoose.plugin(findOrErrorPlugin);
 
 // schema level
 // example.js
 
 const mongoose = require('mongoose');
-const findOrErrorPlugin = require('mongoose-findorerror');
+const findOrErrorPlugin = require('mongoose-findone-or-error');
 
 const schema = new mongoose.Schema({
   name: String,
